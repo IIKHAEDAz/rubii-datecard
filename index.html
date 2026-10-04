@@ -1,7 +1,6 @@
 <!doctype html>
-<html lang="th"><head><style>body {transition: opacity ease-in 0.2s; } 
-body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
-</style>
+<html lang="th">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rubii DateCard Studio — 10 Styles</title><meta name="description" content="พรีวิวการ์ดวันที่ 10 แบบ เปลี่ยนรูปด้วยลิงก์และคัดลอกโค้ดสำหรับ Rubii"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%231a202a%27/%3E%3Crect x=%277%27 y=%278%27 width=%2718%27 height=%2717%27 rx=%273%27 fill=%27%2394c9ee%27/%3E%3Cpath d=%27M7 13h18%27 stroke=%27%231a202a%27 stroke-width=%272%27/%3E%3C/svg%3E">
@@ -99,47 +98,19 @@ button:focus-visible{outline:3px solid #a2cfef;outline-offset:3px}
 </head>
 <body>
 <div class="app">
-  <div class="topbar"><div class="brand"><h1>Rubii DateCard Studio</h1><p>พรีวิว 10 แบบ · เปลี่ยนชื่อแท็กและรูปพื้นหลังได้ · คัดลอก CSS / HTML / Regex / Output / การตั้งค่าได้ทันที</p></div><div class="actions"><button class="btn primary" id="downloadAppBtn" fdprocessedid="g1y0w">ดาวน์โหลดไฟล์ HTML</button><div class="badge">10 DATECARDS</div></div></div>
+  <div class="topbar"><div class="brand"><h1>Rubii DateCard Studio</h1><p>พรีวิว 10 แบบ · เปลี่ยนชื่อแท็กและรูปพื้นหลังได้ · คัดลอก CSS / HTML / Regex / Output / การตั้งค่าได้ทันที</p></div><div class="actions"><div class="badge">10 DATECARDS</div></div></div>
   <div class="layout">
-    <aside class="sidebar"><div class="side-title">เลือกรูปแบบ</div><div class="style-list" id="styleList"><button class="style-btn active" fdprocessedid="i1ropf"><span class="style-num">01</span><span class="style-meta"><b>datecard</b><span>Balanced Grid</span></span></button><button class="style-btn" fdprocessedid="7aiilg"><span class="style-num">02</span><span class="style-meta"><b>datecardA</b><span>Big Time Hero</span></span></button><button class="style-btn" fdprocessedid="hvshot"><span class="style-num">03</span><span class="style-meta"><b>datecardB</b><span>Film Panel</span></span></button><button class="style-btn" fdprocessedid="j18m9k"><span class="style-num">04</span><span class="style-meta"><b>datecardC</b><span>iOS Settings</span></span></button><button class="style-btn" fdprocessedid="3a8yi"><span class="style-num">05</span><span class="style-meta"><b>datecardD</b><span>Editorial Minimal</span></span></button><button class="style-btn" fdprocessedid="23c27w"><span class="style-num">06</span><span class="style-meta"><b>datecardE</b><span>Cinematic Corners</span></span></button><button class="style-btn" fdprocessedid="b0sroh"><span class="style-num">07</span><span class="style-meta"><b>datecardF</b><span>Center Cinematic</span></span></button><button class="style-btn" fdprocessedid="cv180u"><span class="style-num">08</span><span class="style-meta"><b>datecardG</b><span>Timeline</span></span></button><button class="style-btn" fdprocessedid="hvkfqn"><span class="style-num">09</span><span class="style-meta"><b>datecardH</b><span>Magazine Split</span></span></button><button class="style-btn" fdprocessedid="24fhem"><span class="style-num">10</span><span class="style-meta"><b>datecardI</b><span>Compact HUD</span></span></button></div></aside>
+    <aside class="sidebar"><div class="side-title">เลือกรูปแบบ</div><div class="style-list" id="styleList"></div></aside>
     <main class="main">
       <section class="controls">
-        <div class="field"><label for="tagName">ชื่อแท็ก / ชื่อการ์ด</label><input id="tagName" value="datecard" spellcheck="false" aria-describedby="tagHint" fdprocessedid="he01vy"><small class="field-hint" id="tagHint" aria-live="polite">เปลี่ยนชื่อแล้วโค้ดทุกแท็บจะอัปเดตทันที</small></div>
-        <div class="field"><label for="bgUrl">วางลิงก์รูป / GIF</label><input id="bgUrl" value="https://s.showimg.link/Daeotc9o0sCE.gif" fdprocessedid="jpw1wg"></div>
-        <div class="actions"><button class="btn primary" id="applyBtn" fdprocessedid="63dae">โหลดรูปจาก URL</button><button class="btn" id="allBgBtn" fdprocessedid="qucu8z">ใช้รูปนี้กับทั้ง 10</button></div>
+        <div class="field"><label for="tagName">ชื่อแท็ก / ชื่อการ์ด</label><input id="tagName" value="datecard" spellcheck="false" aria-describedby="tagHint"><small class="field-hint" id="tagHint" aria-live="polite">เปลี่ยนชื่อแล้วโค้ดทุกแท็บจะอัปเดตทันที</small></div>
+        <div class="field"><label for="bgUrl">วางลิงก์รูป / GIF</label><input id="bgUrl" value="https://s.showimg.link/Daeotc9o0sCE.gif"></div>
+        <div class="actions"><button class="btn primary" id="applyBtn">โหลดรูปจาก URL</button><button class="btn" id="allBgBtn">ใช้รูปนี้กับทั้ง 10</button></div>
       </section>
-      <section class="preview-shell"><div class="preview-head"><h2 id="previewTitle">01 · Balanced Grid · datecard</h2><span>ตัวอย่างมือถือ Rubii</span></div><div class="phone"><div class="phone-bar"><span>21:29</span><span>5G · 98%</span></div><div class="preview-stage" id="preview"><div class="dcBase preview-card"><img class="preview-image" alt="" decoding="async" referrerpolicy="no-referrer" src="/api/image?url=https%3A%2F%2Fs.showimg.link%2FDaeotc9o0sCE.gif"><div class="preview-shade"></div><div class="s1-in"><div class="s1-top"><div class="s1-box frost"><small class="kicker">DATE</small><b class="val">วันอาทิตย์ 4 ตุลาคม 2026</b></div><div class="s1-box s1-time frost"><small class="kicker">TIME</small><b class="val">21:29</b></div></div><div class="s1-box s1-wide frost"><small class="kicker">LOCATION</small><b class="val">กรุงเทพมหานคร</b></div><div class="s1-box s1-wide frost"><small class="kicker">WEATHER</small><b class="val">29°C · มีเมฆมาก</b></div></div></div><div class="image-status" role="status">แสดงรูปตัวอย่างแล้ว</div></div></div></section>
+      <section class="preview-shell"><div class="preview-head"><h2 id="previewTitle">Preview</h2><span>ตัวอย่างมือถือ Rubii</span></div><div class="phone"><div class="phone-bar"><span>21:29</span><span>5G · 98%</span></div><div class="preview-stage" id="preview"></div></div></section>
       <section class="code-panel">
-        <div class="tabs"><button class="tab active" data-tab="css" fdprocessedid="grukgl">CSS</button><button class="tab" data-tab="html" fdprocessedid="6726wj">HTML / Replacement</button><button class="tab" data-tab="regex" fdprocessedid="znhfmi">Regex</button><button class="tab" data-tab="output" fdprocessedid="cgpt2">AI Output</button><button class="tab" data-tab="setup" fdprocessedid="hl1im">การวาง / ตั้งค่า</button></div>
-        <div class="code-wrap"><button class="copy" id="copyBtn" fdprocessedid="9ejig8">คัดลอก</button><pre id="codeBox">.datecard{
-  position:relative;
-  width:calc(100% - 24px);
-  margin:16px auto;
-  border-radius:15px;
-  overflow:hidden;
-  box-sizing:border-box;
-  background:linear-gradient(rgba(8,10,16,.16),rgba(8,10,16,.26)),url("https://s.showimg.link/Daeotc9o0sCE.gif") center / cover no-repeat;
-  border:1.5px solid rgba(255,255,255,.24);
-  box-shadow:0 8px 20px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.06);
-  color:#fff;
-}
-.datecard *{box-sizing:border-box;}
-
-.datecard-box,.datecard-hero,.datecard-mini,.datecard-glass,.datecard-group,.datecard-card,.datecard-info{
-  background:linear-gradient(180deg,rgba(255,255,255,.24),rgba(255,255,255,.10));
-  border:1px solid rgba(255,255,255,.22);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.16),0 3px 10px rgba(0,0,0,.12);
-  backdrop-filter:blur(6px) saturate(115%);
-  -webkit-backdrop-filter:blur(6px) saturate(115%);
-}
-
-.datecard-inner{padding:8px;}
-.datecard-top{display:grid;grid-template-columns:1fr 1fr;gap:5px;}
-.datecard-box{padding:8px 10px;border-radius:12px;}
-.datecard-wide{margin-top:5px;}
-.datecard-box small{display:block;margin-bottom:4px;font-size:5px;font-weight:700;letter-spacing:1px;color:rgba(255,255,255,.68);}
-.datecard-box b{display:block;font-size:10px;font-weight:800;line-height:1.2;color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.38);}
-.datecard-time b{font-size:18px;font-weight:900;}</pre></div>
+        <div class="tabs"><button class="tab active" data-tab="css">CSS</button><button class="tab" data-tab="html">HTML / Replacement</button><button class="tab" data-tab="regex">Regex</button><button class="tab" data-tab="output">AI Output</button><button class="tab" data-tab="setup">การวาง / ตั้งค่า</button></div>
+        <div class="code-wrap"><button class="copy" id="copyBtn">คัดลอก</button><pre id="codeBox"></pre></div>
       </section>
       <div class="note"><b>หมายเหตุ:</b> เปลี่ยนชื่อแท็กแล้ว CSS, HTML, Regex, AI Output และการตั้งค่าจะอัปเดตทันที ชื่อแต่ละแบบแยกกัน · เปลี่ยน URL รูปแล้วโค้ด CSS และ HTML จะอัปเดตทันที</div>
     </main>
@@ -165,15 +136,6 @@ if(i===6)return `<div class="dcBase" style="${st}"><div class="s7-in txtShadow">
 if(i===7)return `<div class="dcBase" style="${st}"><div class="s8-in txtShadow"><div class="s8-row s8-time"><small class="kicker">TIME</small><b class="val">${V.time}</b></div><div class="s8-row"><small class="kicker">DATE</small><b class="val">${V.date}</b></div><div class="s8-row"><small class="kicker">LOCATION</small><b class="val">${V.loc}</b></div><div class="s8-row"><small class="kicker">WEATHER</small><b class="val">${V.weather}</b></div></div></div>`;
 if(i===8)return `<div class="dcBase" style="${st}"><div class="s9-in txtShadow"><div class="s9-top"><div class="s9-day"><small class="kicker">DATE</small><b class="val">${V.date}</b></div><div class="s9-time"><small class="kicker">TIME</small><b class="val">${V.time}</b></div></div><div class="s9-mid"></div><div class="s9-bottom"><div class="s9-loc"><small class="kicker">LOCATION</small><b class="val">${V.loc}</b></div><div class="s9-weather"><small class="kicker">WEATHER</small><b class="val">${V.weather}</b></div></div></div></div>`;
 return `<div class="dcBase" style="${st}"><div class="s10-in txtShadow"><div class="s10-head"><small class="kicker">SCENE STATUS</small><b class="val">${V.time}</b></div><div class="s10-div"></div><div class="s10-main"><div class="s10-item"><small class="kicker">DATE</small><b class="val">${V.date}</b></div><div class="s10-item"><small class="kicker">LOCATION</small><b class="val">${V.loc}</b></div></div><div class="s10-weather"><small class="kicker">WEATHER</small><b class="val">${V.weather}</b></div></div></div>`}
-document.getElementById('downloadAppBtn').onclick=()=>{
- state[current].bg=normalizeImageUrl(bgUrl.value);code();
- const clone=document.documentElement.cloneNode(true);
- const saved=document.createElement('script');
- saved.textContent='state.splice(0,state.length,...'+JSON.stringify(state).replace(/</g,'\\u003c')+');select('+current+');';
- const mainScript=clone.querySelector('script');mainScript.textContent=mainScript.textContent.replace("state[current].bg","state[current].bg");clone.querySelector('body').appendChild(saved);
- const blob=new Blob(['<!doctype html>\n'+clone.outerHTML],{type:'text/html;charset=utf-8'});
- const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='rubii_datecard_studio_10.html';a.click();setTimeout(()=>URL.revokeObjectURL(url),30000);
-};
 let previewRequest=0;
 function preview(){
  const request=++previewRequest;
@@ -187,12 +149,9 @@ function preview(){
  card.prepend(shade);card.prepend(img);
  const status=document.createElement('div');status.className='image-status';status.setAttribute('role','status');status.textContent='กำลังโหลดรูปตัวอย่าง…';stage.appendChild(status);
  img.onload=()=>{if(request!==previewRequest)return;status.textContent='แสดงรูปตัวอย่างแล้ว';status.classList.remove('error')};
- let retried=false; img.onerror=async()=>{
- if(request!==previewRequest)return;img.hidden=true;status.classList.add('error');status.textContent='โหลดรูปไม่สำเร็จ กำลังตรวจสอบลิงก์…';
- try{const response=await fetch('/api/image?url='+encodeURIComponent(state[current].bg));const detail=await response.json();if(request===previewRequest)status.textContent=detail.error||'โหลดรูปไม่สำเร็จ';}catch{if(request===previewRequest)status.textContent='โหลดรูปไม่สำเร็จ ลองกดโหลดรูปจาก URL อีกครั้ง';}
- };
+ let retried=false; img.onerror=()=>{if(request!==previewRequest)return;img.hidden=true;status.classList.add('error');status.textContent='โหลดรูปจากลิงก์ไม่สำเร็จ กรุณาตรวจว่าลิงก์เปิดเป็นรูปได้';};
 
- img.src=/^https?:\/\//i.test(state[current].bg)?'/api/image?url='+encodeURIComponent(state[current].bg):state[current].bg;
+ img.src=state[current].bg===DEFAULT_BG?EMBEDDED_BG:state[current].bg;
 }
 function htmlCode(tag){const t=tag;const arr=[`<div class="${t}"><div class="${t}-inner"><div class="${t}-top"><div class="${t}-box"><small>DATE</small><b>$1</b></div><div class="${t}-box ${t}-time"><small>TIME</small><b>$3</b></div></div><div class="${t}-box ${t}-wide"><small>LOCATION</small><b>$2</b></div><div class="${t}-box ${t}-wide"><small>WEATHER</small><b>$4</b></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-hero"><small>TIME</small><b>$3</b></div><div class="${t}-row"><div class="${t}-mini"><small>DATE</small><b>$1</b></div><div class="${t}-mini"><small>LOCATION</small><b>$2</b></div><div class="${t}-mini ${t}-weather"><small>WEATHER</small><b>$4</b></div></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-main"><div class="${t}-glass ${t}-time"><small>TIME</small><b>$3</b></div><div class="${t}-side"><div class="${t}-glass ${t}-sidebox"><small>DATE</small><b>$1</b></div><div class="${t}-glass ${t}-sidebox"><small>WEATHER</small><b>$4</b></div></div></div><div class="${t}-footer"><div class="${t}-glass ${t}-chip"><small>LOCATION</small><b>$2</b></div></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-group"><div class="${t}-hero"><small>TIME</small><b>$3</b></div><div class="${t}-row"><span class="${t}-label">DATE</span><span class="${t}-value">$1</span></div><div class="${t}-row"><span class="${t}-label">LOCATION</span><span class="${t}-value">$2</span></div><div class="${t}-row"><span class="${t}-label">WEATHER</span><span class="${t}-value">$4</span></div></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-card"><div class="${t}-top"><span>$1</span></div><div class="${t}-time">$3</div><div class="${t}-bottom"><div class="${t}-info"><small>LOCATION</small><b>$2</b></div><div class="${t}-info"><small>WEATHER</small><b>$4</b></div></div></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-time"><small>TIME</small><b>$3</b></div><div class="${t}-date"><small>DATE</small><b>$1</b></div><div class="${t}-line"></div><div class="${t}-location"><small>LOCATION</small><b>$2</b></div><div class="${t}-weather"><small>WEATHER</small><b>$4</b></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-date"><b>$1</b></div><div class="${t}-time"><b>$3</b></div><div class="${t}-line"></div><div class="${t}-location"><b>$2</b></div><div class="${t}-weather"><b>$4</b></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-row ${t}-time"><small>TIME</small><b>$3</b></div><div class="${t}-row"><small>DATE</small><b>$1</b></div><div class="${t}-row"><small>LOCATION</small><b>$2</b></div><div class="${t}-row"><small>WEATHER</small><b>$4</b></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-top"><div class="${t}-day"><small>DATE</small><b>$1</b></div><div class="${t}-time"><small>TIME</small><b>$3</b></div></div><div class="${t}-mid"></div><div class="${t}-bottom"><div class="${t}-location"><small>LOCATION</small><b>$2</b></div><div class="${t}-weather"><small>WEATHER</small><b>$4</b></div></div></div></div>`,`<div class="${t}"><div class="${t}-inner"><div class="${t}-header"><small>SCENE STATUS</small><b class="${t}-time">$3</b></div><div class="${t}-divider"></div><div class="${t}-main"><div class="${t}-item"><small>DATE</small><b>$1</b></div><div class="${t}-item"><small>LOCATION</small><b>$2</b></div></div><div class="${t}-weather"><small>WEATHER</small><b>$4</b></div></div></div>`];return arr[current].replace(`<div class="${t}">`,`<div class="${t}" style="${esc('background-image:linear-gradient(rgba(8,10,16,.16),rgba(8,10,16,.26)),url('+JSON.stringify(state[current].bg)+')')}">`)}
 function cssCode(tag,bg){
@@ -353,6 +312,5 @@ if(document.modelContext?.registerTool){
 }
 </script>
 
-<script type="module">import { mountSiteWidget } from "/_sites/dispatch-assets/sites-widget.js";mountSiteWidget({"kind":"editor-composer","mobileEnabled":false,"environment":"production","chatgptOrigin":"https://chatgpt.com","locale":"en-US","accountId":"personal","projectId":"appgprj_6ac27f2e833481919bba72283ff29210","projectTitle":"Rubii DateCard Studio"});</script><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a4562305db45be5b',t:'MTc5MTEzNzM1Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
-
-<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span><div data-sites-widget="editor-composer" popover="manual"></div><script>state.splice(0,state.length,...[{"tag":"datecard","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardA","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardB","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardC","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardD","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardE","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardF","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardG","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardH","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"},{"tag":"datecardI","bg":"https://s.showimg.link/Daeotc9o0sCE.gif"}]);select(0);</script></body></html>
+</body>
+</html>
